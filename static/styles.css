@@ -27,36 +27,85 @@
 
 /* Tree */
 .christmas-tree {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-
 }
 
-.day:nth-child(1) {
+.level {
+  display:grid;
+  place-items: center;
+}
+
+.crown {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.crown a:nth-child(1) {
   grid-row-start: 1;
-  grid-column: 4 / span 3;
+  grid-column-start: 5;
 }
 
-.day:nth-child(2) {
+.level-1 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.level-1 a:nth-child(1) {
+  grid-column-start: 4;
+}
+
+.level-2 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.level-2 a:nth-child(1) {
+  grid-column-start: 3;
+}
+
+.level-3 {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.level-3 a:nth-child(1) {
+  grid-column-start: 2;
+}
+
+.trunk {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.trunk a:nth-child(1) {
+  grid-column-start: 5;
+}
+
+.trunk a:nth-child(5) {
+  grid-column-start: 5;
   grid-row-start: 2;
-  grid-column: 3 / span 1;
 }
 
-.day:nth-child(3) {
+.trunk a:nth-child(6) {
+  grid-column-start: 6;
   grid-row-start: 2;
-  grid-column: 4 / span 1;
 }
 
-.day:nth-child(4) {
+.trunk a:nth-child(7) {
+  grid-column-start: 7;
   grid-row-start: 2;
-  grid-column: 5 / span 1;
 }
 
-.day {
-  width: 300px;
-  height: 200px;
+.trunk a:nth-child(8) {
+  grid-column-start: 8;
+  grid-row-start: 2;
+}
+
+.day-box {
+  width: 250px;
+  height: 150px;
   padding: 20px;
   border: 1px solid #ccc;
   text-align: center;
-  background-color: tomato;
+  background-color: darkgreen;
+  color: darkred;
+}
+
+.trunk a .day-box {
+
+  background-color: brown;
 }
